@@ -36,7 +36,6 @@ h3,
 h4,
 h5,
 h6,
-ul,
 p {
   margin: 0;
 }
@@ -72,11 +71,11 @@ p {
 /* logo header and footer ---------------------------*/
 
 .logo {
-  color: var(--second-text-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.17;
+
   text-decoration: none;
 }
 
@@ -113,7 +112,7 @@ p {
 }
 
 .header .link {
-  display: inline-block;
+  display: block;
   padding: 32px 0;
 
   font-weight: 500;
@@ -225,6 +224,11 @@ p {
   justify-content: space-between;
 }
 
+.work .work-img,
+.team .team-img {
+  display: block;
+}
+
 .work.section {
   padding-bottom: 94px;
 }
@@ -235,7 +239,7 @@ p {
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.17;
 
   text-align: center;
 
@@ -284,7 +288,25 @@ p {
 
 /* footer */
 
-.footer .footer .link {
+.footer {
+  padding: 60px 0;
+  margin-right: auto;
+}
+
+.footer .contact,
+.address-link {
+  display: block;
+}
+
+.second-container {
+  margin-bottom: 20px;
+}
+
+.footer .item {
+  margin-bottom: 5px;
+}
+
+.footer .link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   text-decoration: none;
@@ -308,6 +330,7 @@ p {
   font-size: 16px;
   line-height: 1.6;
   cursor: pointer;
+
   color: var(--second-text-color);
   background-color: var(--third-bgc-color);
 }
