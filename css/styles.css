@@ -231,7 +231,8 @@ p {
 }
 
 .work .work-img,
-.team .team-img {
+.team .team-img,
+.project-img {
   display: block;
 }
 
@@ -390,7 +391,6 @@ p {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
 }
 .project > .item:nth-child(3n) {
   margin-right: 0;
@@ -402,11 +402,7 @@ p {
 
 .card-container {
   padding: 20px 24px;
-}
-
-.project-img {
-  display: block;
-  width: 369px;
+  border: 1px solid #eeeeee;
 }
 
 .project-link {
