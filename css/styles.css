@@ -6,6 +6,7 @@
 /* white   #FFFFFF */
 /* accent color   #2196F3 */
 /* logo color  #2196F3 #000000 */
+/* border color #eeeeee */
 
 :root {
   --main-text-color: #757575;
@@ -19,6 +20,7 @@
   --white-color: #ffffff;
   --black-color: #000000;
   --hero-adn-footer-bgc: #2f303a;
+  --border-color: #eeeeee;
 }
 
 body {
@@ -128,7 +130,7 @@ p {
 }
 
 .header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .nav-list .current {
@@ -171,7 +173,7 @@ p {
 .hero .hero-btn {
   padding: 10px 32px;
   border-radius: 4px;
-  border: 1px solid transparent;
+  border: none;
 
   font-family: inherit;
   font-weight: 700;
@@ -179,6 +181,7 @@ p {
   line-height: 1.8;
 
   letter-spacing: 0.06em;
+  cursor: pointer;
 
   color: var(--white-color);
   background-color: var(--hyper-link-color);
@@ -212,7 +215,6 @@ p {
 }
 
 .features .list-title {
-  margin-top: 2px;
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -227,7 +229,7 @@ p {
 .work-list,
 .team-list {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .work .work-img,
@@ -270,7 +272,8 @@ p {
 .team-list .item {
   width: 270px;
   padding-bottom: 30px;
-
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 0px 0px 4px 4px;
 
   background-color: var(--main-bgc-color);
@@ -299,7 +302,6 @@ p {
 
 .footer {
   padding: 60px 0;
-  margin-right: auto;
 }
 
 .footer .contact,
@@ -344,8 +346,7 @@ p {
 }
 
 .filrer-container {
-  padding-bottom: 16px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .filter-list {
@@ -402,7 +403,9 @@ p {
 
 .card-container {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
 }
 
 .project-link {
